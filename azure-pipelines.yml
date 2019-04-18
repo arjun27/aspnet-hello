@@ -15,3 +15,10 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- task: RichCodeNavIndexer@0
+  inputs:
+    serviceConnection: 'rich-code-nav'
+    nugetServiceConnection: 'rich-code-nav-nuget'
+    languages: csharp
+    githubServiceConnection: 'arjun27 (1)'
