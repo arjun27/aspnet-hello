@@ -18,8 +18,8 @@ steps:
 
 - task: RichCodeNavIndexer@0
   inputs:
-    serviceConnection: 'rich-code-nav'
+    serviceConnection: 'rich-code-nav-prod'
     nugetServiceConnection: 'rich-code-nav-nuget'
     languages: csharp
     githubServiceConnection: 'arjun27 (1)'
-    serviceEndpoint: 'https://int.richnav.vsengsaas.visualstudio.com'
+    serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
