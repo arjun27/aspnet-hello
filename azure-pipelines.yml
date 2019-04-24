@@ -22,4 +22,3 @@ steps:
     nugetServiceConnection: 'rich-code-nav-nuget'
     languages: csharp
     githubServiceConnection: 'arjun27 (1)'
-    serviceEndpoint: 'https://int.richnav.vsengsaas.visualstudio.com'
