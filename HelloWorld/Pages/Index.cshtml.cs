@@ -12,7 +12,7 @@ namespace HelloWorld.Pages
     {
         public void OnGet()
         {
-            // some comment here
+            // some comment
         }
     }
 }
