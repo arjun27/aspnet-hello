@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: 'VS2017-Win2016'
 
 variables:
   buildConfiguration: 'Release'
@@ -15,3 +15,11 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- task: RichCodeNavIndexer@0
+  inputs:
+    serviceConnection: 'rich-code-nav-int'
+    nugetServiceConnection: 'rich-code-nav-nuget'
+    languages: csharp
+    githubServiceConnection: 'arjun27 (1)'
+    serviceEndpoint: 'https://int.richnav.vsengsaas.visualstudio.com'

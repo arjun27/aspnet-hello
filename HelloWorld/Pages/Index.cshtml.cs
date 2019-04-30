@@ -6,12 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace HelloWorld.Pages
+
 {
     public class IndexModel : PageModel
     {
+        #pragma warning disable CS0219
         public void OnGet()
         {
-
+            // some comment here
+            int unused = 0;
         }
     }
 }
