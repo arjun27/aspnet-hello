@@ -10,6 +10,7 @@ namespace HelloWorld.Pages
 {
     public class IndexModel : PageModel
     {
+        #pragma warning disable CS0219
         public void OnGet()
         {
             // some comment here
