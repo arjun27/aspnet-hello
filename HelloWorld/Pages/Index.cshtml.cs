@@ -13,6 +13,7 @@ namespace HelloWorld.Pages
         public void OnGet()
         {
             // some comment here
+            int unused = 0;
         }
     }
 }
